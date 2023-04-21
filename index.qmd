@@ -1,0 +1,94 @@
+---
+format: 
+  revealjs:
+    theme: ["theme/q-theme.scss"]
+    slide-number: c/t
+    logo: "unsw-long.png"
+    footer: "PhD Seminar"
+    code-copy: true
+    center-title-slide: false
+    include-in-header: heading-meta.html
+    code-link: true
+    code-overflow: wrap
+    highlight-style: a11y
+    chalkboard: true
+    height: 1080
+    width: 1920
+    fontsize: 28pt
+    linestretch: 1.7
+    auto-stretch: false
+    html-math-method: mathjax
+callout-appearance: simple
+callout-icon: false
+bibliography: ref.bib
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+```{r}
+#| echo: false
+#| include: false
+
+```
+
+<h1>Discussion of "Identifying Summary <br> and Parameter Structures in ABC: <br> A Gaussian Graphical Model Approach"</h1>
+
+<h2>PhD Seminar</h2>
+
+<hr>
+
+<h3>Fangzhou Yu</h3>
+
+<h3>`r Sys.Date()`</h3>
+
+<br>
+
+![](unsw.png){.absolute top="550" left="1400" width="400"}
+
+## Summary
+
+<br>
+
+- This paper proposes a novel method that builds on Approximate Bayesian Computation (ABC)
+- ABC + Gaussian Graphical Model (GGM) + Graph Lasso
+- Overcome the high-dimensional problem in ABC
+- Capture the relationship in summary stats and parameters
+
+<br>
+
+- Simulations to show better performance over Gaussian Copula [@li2017extending]
+- Smaller bias over frequentist method (SMM) in DSGE model
+
+## Questions and Comments
+
+<br>
+
+1. What is the economic interpretation of correlation between parameters?
+    - E.g. what does it mean if household's preference is correlated with the rate of depreciation?
+    - Adds to the main contribution
+    - Convince researchers to use the proposed method
+
+<br>
+
+2. How is the standard error calculated?
+    - After Lasso selection, the standard errors are usually incorrect
+    - The tuning algorithm is more frequentist-based
+    - Correct standard errors can be obtained if the tuning parameter is part of the posterior, like the Bayesian Lasso [@park2008bayesian]
+
+## Questions and Comments
+
+<br>
+
+3. The target journal/readers
+    - Maker decisions on how to set up the motivation and simulations
+    - If target Bayesian, the current content seems intact
+    - If target Fequentist as well, 
+      - The motivating example may lack applications in economics
+      - High-dimension is usually not a problem in DSGE, but joint identification/nonlinearity is
+
+<br>
+
+4. Minor comment on the presentation, <br> less terminology and more intuition would be appreciated by general audience
+
+## References
