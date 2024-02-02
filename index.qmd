@@ -4,7 +4,7 @@ format:
     theme: ["theme/q-theme.scss"]
     slide-number: c/t
     logo: "unsw-long.png"
-    footer: "PhD Seminar"
+    footer: "ANZESG"
     code-copy: true
     center-title-slide: false
     include-in-header: heading-meta.html
@@ -32,15 +32,17 @@ editor:
 
 ```
 
-<h1>Discussion of "Identifying Summary <br> and Parameter Structures in ABC: <br> A Gaussian Graphical Model Approach"</h1>
+<h1>Discussion of "Identification robust inference for double/debiased machine learning"</h1>
 
-<h2>PhD Seminar</h2>
+<br>
+
+<h2>ANZESG 2024</h2>
 
 <hr>
 
 <h3>Fangzhou Yu</h3>
 
-<h3>`r Sys.Date()`</h3>
+<h3>2024-02-09</h3>
 
 <br>
 
